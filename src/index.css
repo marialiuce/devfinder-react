@@ -1,0 +1,196 @@
+:root {
+  --bg-color: #141d2f;
+  --card-bg: #1f2a48;
+  --text-primary: #ffffff;
+  --text-secondary: #dbdbdb;
+  --accent-color: #0079ff;
+  --accent-hover: #60abff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: var(--bg-color);
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* --- Busca --- */
+.search {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+.search-container button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-container button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* --- User Card --- */
+.user-card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  animation: surgimento 0.5s ease-in-out;
+}
+
+.user-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--bg-color);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats p:first-child {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.stats p:last-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* --- Repositórios --- */
+.repos-container {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.repo {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #303d5e;
+}
+
+.repo h3 {
+  color: var(--text-primary);
+}
+
+.repo .language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.repo .stats {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.repo-btn {
+  text-decoration: none;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  padding: 0.8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.repo-btn:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-color);
+}
+
+@keyframes surgimento {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
