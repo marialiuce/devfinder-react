@@ -25,7 +25,8 @@ This project was developed with the following technologies:
 
 ## Key Concepts Applied
 
-- During the development of this project, the following concepts were applied:
+During the development of this project, the following concepts were applied:
+
 - React Hooks (useState) for state management.
 - Asynchronous Requests using fetch and async/await.
 - Array Manipulation using sort() and slice() to filter the best repositories.
