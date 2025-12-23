@@ -25,31 +25,30 @@ This project was developed with the following technologies:
 
 ## How to run the project locally
 
-1. Clone the repository:
-```bash
-git clone [https://github.com/SEU-USUARIO/devfinder-react.git](https://github.com/SEU-USUARIO/devfinder-react.git)
+1. **Clone the repository:**
+   ```bash
+    git clone [https://github.com/SEU-USUARIO/devfinder-react.git](https://github.com/SEU-USUARIO/devfinder-react.git)
 
-2. Enter the project folder:
-```bash
-cd devfinder
+2. **Enter the project folder:**
+   ```bash
+   cd devfinder 
 
-3. Install dependencies:
-```bash
-npm install
+3. **Install dependencies:**
+   ```bash
+   npm install
 
-4. Run the project:
-```bash
-npm run dev
+4. **Run the development server:**
+   ```bash
+   npm run dev
 
-5. Access http://localhost:5173 in your browser.
+5. **Open your browser:**
+Access http://localhost:5173 in your browser.
 
 ## Key Concepts Applied
 
-During the development of this project, the following concepts were applied:
+### During the development of this project, the following concepts were applied:
 
 - Refactoring: Migrating from Vanilla CSS to Tailwind CSS.
 - React Hooks: useState for state management.
 - Asynchronous Requests: Fetch API and Async/Await.
 - Data Manipulation: Sorting and slicing arrays to display top content.
-
-
