@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Search } from './components/Search'
 import { UserCard } from './components/UserCard'
-import { Repo } from './components/Repo' 
+import { Repo } from './components/Repo'
 
 function App() {
   const [userData, setUserData] = useState(null)
-  const [repos, setRepos] = useState([]) 
+  const [repos, setRepos] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -13,7 +13,7 @@ function App() {
     setIsLoading(true)
     setError(false)
     setUserData(null)
-    setRepos([]) 
+    setRepos([])
 
     try {
       const res = await fetch(`https://api.github.com/users/${userName}`)
@@ -41,8 +41,8 @@ function App() {
       const reposData = await reposRes.json()
 
       const bestRepos = reposData
-        .sort((a, b) => b.stargazers_count - a.stargazers_count) 
-        .slice(0, 5) 
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 5)
 
       setRepos(bestRepos)
 
@@ -55,27 +55,30 @@ function App() {
   }
 
   return (
-    <div className="app">
-      <h1>DevFinder</h1>
-      
-      <Search loadUser={loadUser} />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 text-gray-100 p-4">
+      <div className="w-full max-w-lg flex flex-col gap-4">
+        <h1 className="text-3xl font-bold text-center mb-4">DevFinder</h1>
+        
+        <Search loadUser={loadUser} />
 
-      {isLoading && <p>Carregando...</p>}
-      {error && <p>Usuário não encontrado!</p>}
-      
-      {userData && (
-        <>
-          <UserCard user={userData} />
-          
-          {repos.length > 0 && (
-            <div className="repos-container">
-              {repos.map((repo) => (
-                <Repo key={repo.id} repo={repo} />
-              ))}
-            </div>
-          )}
-        </>
-      )}
+        {isLoading && <p className="text-center text-lg">Carregando...</p>}
+        {error && <p className="text-center text-red-400">Usuário não encontrado!</p>}
+        
+        {userData && (
+          <>
+            <UserCard user={userData} />
+            
+            {repos.length > 0 && (
+              <div className="flex flex-col gap-4 mt-4">
+                <h3 className="text-xl font-bold text-center">Melhores Repositórios</h3>
+                {repos.map((repo) => (
+                  <Repo key={repo.id} repo={repo} />
+                ))}
+              </div>
+            )}
+          </>
+        )}
+      </div>
     </div>
   )
 }
