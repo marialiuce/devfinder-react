@@ -9,11 +9,11 @@ Developed as a study project to practice API consumption and data manipulation o
 
 This project was developed with the following technologies:
 
-- React (Vite)
-- JavaScript (ES6+)
-- CSS3 (CSS Variables and Responsive Design)
-- GitHub API (Real data consumption)
-- React Icons
+- **React** (Vite)
+- **Tailwind CSS** (Utility-first CSS framework for rapid UI development)
+- **JavaScript** (ES6+)
+- **GitHub API** (Real data consumption)
+- **React Icons**
 
 ## Features
 
@@ -21,13 +21,35 @@ This project was developed with the following technologies:
 - Display profile data (Avatar, Name, Followers, Following, Location).
 - Automatic listing of the 5 most popular repositories (sorted by stars).
 - Error handling (User not found).
-- Responsive Design and Dark Mode.
+- Fully Responsive Design and Dark Mode (built with Tailwind).
+
+## How to run the project locally
+
+1. Clone the repository:
+```bash
+git clone [https://github.com/SEU-USUARIO/devfinder-react.git](https://github.com/SEU-USUARIO/devfinder-react.git)
+
+2. Enter the project folder:
+```bash
+cd devfinder
+
+3. Install dependencies:
+```bash
+npm install
+
+4. Run the project:
+```bash
+npm run dev
+
+5. Access http://localhost:5173 in your browser.
 
 ## Key Concepts Applied
 
 During the development of this project, the following concepts were applied:
 
-- React Hooks (useState) for state management.
-- Asynchronous Requests using fetch and async/await.
-- Array Manipulation using sort() and slice() to filter the best repositories.
-- Component-Based Architecture (Search, UserCard, Repo).
+- Refactoring: Migrating from Vanilla CSS to Tailwind CSS.
+- React Hooks: useState for state management.
+- Asynchronous Requests: Fetch API and Async/Await.
+- Data Manipulation: Sorting and slicing arrays to display top content.
+
+
