@@ -1,5 +1,10 @@
 # DevFinder
 
+![Project Status](https://img.shields.io/badge/status-complete-green)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
+
 A web application to search for GitHub users and list their top repositories.
 Developed as a study project to practice API consumption and data manipulation on the Front-end.
 
