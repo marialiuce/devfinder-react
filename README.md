@@ -10,16 +10,6 @@ Developed as a study project to practice API consumption and data manipulation o
 
 **Live Demo:** https://devfinder-react-five.vercel.app/
 
-## Technologies Used
-
-This project was developed with the following technologies:
-
-- **React** (Vite)
-- **Tailwind CSS** (Utility-first CSS framework for rapid UI development)
-- **JavaScript** (ES6+)
-- **GitHub API** (Real data consumption)
-- **React Icons**
-
 ## Features
 
 - Search for GitHub users by username.
@@ -27,6 +17,25 @@ This project was developed with the following technologies:
 - Automatic listing of the 5 most popular repositories (sorted by stars).
 - Error handling (User not found).
 - Fully Responsive Design and Dark Mode (built with Tailwind).
+
+## Technologies Used
+
+This project was developed with the following technologies:
+
+- **React**: Vite
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
+- **JavaScript** 
+- **GitHub API**: Real data consumption
+- **React Icons**
+
+## Key Concepts Applied
+
+### During the development of this project, the following concepts were applied:
+
+- Refactoring: Migrating from Vanilla CSS to Tailwind CSS.
+- React Hooks: useState for state management.
+- Asynchronous Requests: Fetch API and Async/Await.
+- Data Manipulation: Sorting and slicing arrays to display top content.
 
 ## How to run the project locally
 
@@ -49,11 +58,3 @@ This project was developed with the following technologies:
 5. **Open your browser:**
 Access http://localhost:5173 in your browser.
 
-## Key Concepts Applied
-
-### During the development of this project, the following concepts were applied:
-
-- Refactoring: Migrating from Vanilla CSS to Tailwind CSS.
-- React Hooks: useState for state management.
-- Asynchronous Requests: Fetch API and Async/Await.
-- Data Manipulation: Sorting and slicing arrays to display top content.
