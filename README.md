@@ -41,7 +41,7 @@ This project was developed with the following technologies:
 
 1. **Clone the repository:**
    ```bash
-    git clone [https://github.com/SEU-USUARIO/devfinder-react.git](https://github.com/SEU-USUARIO/devfinder-react.git)
+    git clone [https://github.com/marialiuce/devfinder-react.git](https://github.com/marialiuce/devfinder-react.git)
 
 2. **Enter the project folder:**
    ```bash
