@@ -15,11 +15,11 @@ export const UserCard = ({ user }) => {
 
       <div className="flex justify-around w-full mt-4 bg-slate-900 p-4 rounded-xl border border-slate-700">
           <div className="flex flex-col items-center">
-              <p className="text-xs text-gray-400 uppercase">Seguidores</p>
+              <p className="text-xs text-gray-400 uppercase">Followers</p>
               <p className="text-xl font-bold">{user.followers}</p>
           </div>
           <div className="flex flex-col items-center">
-              <p className="text-xs text-gray-400 uppercase">Seguindo</p>
+              <p className="text-xs text-gray-400 uppercase">Following</p>
               <p className="text-xl font-bold">{user.following}</p>
           </div>
       </div>

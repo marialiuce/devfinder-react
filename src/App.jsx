@@ -61,8 +61,8 @@ function App() {
         
         <Search loadUser={loadUser} />
 
-        {isLoading && <p className="text-center text-lg">Carregando...</p>}
-        {error && <p className="text-center text-red-400">Usuário não encontrado!</p>}
+        {isLoading && <p className="text-center text-lg">Loading...</p>}
+        {error && <p className="text-center text-red-400">User not found!</p>}
         
         {userData && (
           <>
@@ -70,7 +70,7 @@ function App() {
             
             {repos.length > 0 && (
               <div className="flex flex-col gap-4 mt-4">
-                <h3 className="text-xl font-bold text-center">Melhores Repositórios</h3>
+                <h3 className="text-xl font-bold text-center">Top Repositories</h3>
                 {repos.map((repo) => (
                   <Repo key={repo.id} repo={repo} />
                 ))}

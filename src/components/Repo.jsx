@@ -9,7 +9,7 @@ export const Repo = ({ repo }) => {
         
         <p className="flex items-center gap-2 text-sm text-gray-400">
             <BsCodeSlash className="text-blue-500" /> 
-            <span>{repo.language || "Sem linguagem"}</span>
+            <span>{repo.language || "No language"}</span>
         </p>
         
         <div className="flex gap-4">
@@ -25,10 +25,11 @@ export const Repo = ({ repo }) => {
         
         <a 
             href={repo.html_url} 
-            target="_blank" 
+            target="_blank"
+            rel="noopener noreferrer" 
             className="flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-700 text-white py-2 rounded-lg border border-slate-700 transition"
         >
-            <span>Ver Código</span>
+            <span>View Code</span>
             <RiGitRepositoryLine /> 
         </a>
     </div>
