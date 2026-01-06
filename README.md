@@ -1,60 +1,38 @@
 # DevFinder
 
-![Project Status](https://img.shields.io/badge/status-complete-green)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
 
-A web application to search for GitHub users and list their top repositories.
-Developed as a study project to practice API consumption and data manipulation on the Front-end.
+A responsive web application that utilizes the GitHub API to search for user profiles and display their most popular repositories. Built with React and Tailwind CSS, focusing on clean UI and efficient data handling.
 
-**Live Demo:** https://devfinder-react-five.vercel.app/
+[Live Demo](https://devfinder-react-five.vercel.app/)
+
+## Technologies
+
+ `React` `Tailwind CSS` `Vite` `JavaScript` `GitHub API` `React Icons`
 
 ## Features
 
-- Search for GitHub users by username.
-- Display profile data (Avatar, Name, Followers, Following, Location).
-- Automatic listing of the 5 most popular repositories (sorted by stars).
-- Error handling (User not found).
-- Fully Responsive Design and Dark Mode (built with Tailwind).
+- Real-time search for GitHub users via username
+- Detailed profile display including avatar, location, followers, and following count
+- Automatic filtering and sorting to display the top 5 repositories based on stars
+- Fully responsive layout adapted for mobile and desktop
+- Error handling for non-existent users
 
-## Technologies Used
+## The Process
 
-This project was developed with the following technologies:
+This project started as a challenge to master API consumption and state management in React. The main goal was to move beyond static layouts and handle dynamic data from a real-world external source.
 
-- **React**: Vite
-- **Tailwind CSS**: Utility-first CSS framework for rapid UI development
-- **JavaScript** 
-- **GitHub API**: Real data consumption
-- **React Icons**
+Initially built with standard CSS, the project underwent a complete refactoring to Tailwind CSS. This transition allowed for a cleaner codebase and faster styling iterations. The core logic involves asynchronous data fetching and client-side array manipulation specifically sorting repositories by star count and slicing the array to ensure the user sees the most relevant content immediately.
 
-## Key Concepts Applied
+## Running the Project
 
-### During the development of this project, the following concepts were applied:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run development server: `npm run dev`
+4. Open `http://localhost:5173` in your browser
 
-- Refactoring: Migrating from Vanilla CSS to Tailwind CSS.
-- React Hooks: useState for state management.
-- Asynchronous Requests: Fetch API and Async/Await.
-- Data Manipulation: Sorting and slicing arrays to display top content.
+## Preview
 
-## How to run the project locally
-
-1. **Clone the repository:**
-   ```bash
-    git clone [https://github.com/marialiuce/devfinder-react.git](https://github.com/marialiuce/devfinder-react.git)
-
-2. **Enter the project folder:**
-   ```bash
-   cd devfinder 
-
-3. **Install dependencies:**
-   ```bash
-   npm install
-
-4. **Run the development server:**
-   ```bash
-   npm run dev
-
-5. **Open your browser:**
-Access http://localhost:5173 in your browser.
-
+https://github.com/user-attachments/assets/224cabd1-5aa0-46db-9565-6afa1857face
